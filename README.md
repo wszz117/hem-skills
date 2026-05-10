@@ -10,22 +10,22 @@
 ## 📑 目录
 
 - [🍎 Apple](#apple)
-- [🤖 Autonomous Ai Agents](#autonomous-ai-agents)
+- [🤖 Autonomous AI Agents](#autonomous-ai-agents)
 - [🎨 Comfyui](#comfyui)
 - [🎨 Creative](#creative)
 - [📊 Data Science](#data-science)
-- [🔧 Devops](#devops)
+- [🔧 DevOps](#devops)
 - [🐛 Dogfood](#dogfood)
 - [📧 Email](#email)
 - [🎮 Gaming](#gaming)
-- [🐙 Github](#github)
+- [🐙 GitHub](#github)
 - [📍 Leisure](#leisure)
-- [🔌 Mcp](#mcp)
+- [🔌 MCP](#mcp)
 - [🎵 Media](#media)
-- [🧠 Mlops](#mlops)
+- [🧠 MLOps](#mlops)
 - [📝 Note Taking](#note-taking)
-- [📦 Openclaw Deploy](#openclaw-deploy)
-- [🔧 Openclaw Upgrade 502 Fix](#openclaw-upgrade-502-fix)
+- [📦 OpenClaw Deploy](#openclaw-deploy)
+- [🔧 OpenClaw Upgrade & 502 Fix](#openclaw-upgrade--502-fix)
 - [💼 Productivity](#productivity)
 - [🔴 Red Teaming](#red-teaming)
 - [🔬 Research](#research)
@@ -37,692 +37,522 @@
 
 ## 🍎 Apple
 
----
-description: Apple/macOS-specific skills — iMessage, Reminders, Notes, FindMy, and macOS automation. These skills only load on macOS systems.
----
+Apple/macOS 专用技能，仅限 macOS 系统使用。
 
 ### apple-notes
-
-Manage Apple Notes via the memo CLI on macOS (create, view, search, edit).
-
+通过 memo CLI 管理 Apple 备忘录（创建、查看、搜索、编辑）。
 [查看详情](./apple/apple-notes)
 
 ### apple-reminders
-
-Manage Apple Reminders via remindctl CLI (list, add, complete, delete).
-
+通过 remindctl CLI 管理 Apple 提醒事项（列出、添加、完成、删除）。
 [查看详情](./apple/apple-reminders)
 
 ### findmy
-
-Track Apple devices and AirTags via FindMy.app on macOS using AppleScript and screen capture.
-
+通过 AppleScript 和截图追踪 Apple 设备和 AirTag 位置。
 [查看详情](./apple/findmy)
 
 ### imessage
-
-Send and receive iMessages/SMS via the imsg CLI on macOS.
-
+通过 imsg CLI 收发 iMessage/SMS 消息。
 [查看详情](./apple/imessage)
 
 ---
 
-## 🤖 Autonomous Ai Agents
+## 🤖 Autonomous AI Agents
 
----
-description: Skills for spawning and orchestrating autonomous AI coding agents and multi-agent workflows — running independent agent processes, delegating tasks, and coordinating parallel workstreams.
----
+自主 AI 编码智能体的编排和多智能体工作流管理。
 
 ### claude-code
-
-Delegate coding tasks to Claude Code (Anthropic's CLI agent). Use for building features, refactoring, PR reviews, and iterative coding. Requires the claude CLI installed.
-
+将编码任务委派给 Claude Code（Anthropic 的 CLI 智能体），用于功能开发、重构、PR 审查。
 [查看详情](./autonomous-ai-agents/claude-code)
 
 ### codex
-
-Delegate coding tasks to OpenAI Codex CLI agent. Use for building features, refactoring, PR reviews, and batch issue fixing. Requires the codex CLI and a git repository.
-
+将编码任务委派给 OpenAI Codex CLI 智能体，用于功能开发、重构、PR 审查。
 [查看详情](./autonomous-ai-agents/codex)
 
 ### hermes-agent
-
-Complete guide to using and extending Hermes Agent — CLI usage, setup, configuration, spawning additional agents, gateway platforms, skills, voice, tools, profiles, and a concise contributor reference. Load this skill when helping users configure Hermes, troubleshoot issues, spawn agent instances, or make code contributions.
-
+Hermes Agent 完整指南 — CLI 用法、安装配置、网关平台、技能、语音、工具、贡献者参考。
 [查看详情](./autonomous-ai-agents/hermes-agent)
 
 ### opencode
-
-Delegate coding tasks to OpenCode CLI agent for feature implementation, refactoring, PR review, and long-running autonomous sessions. Requires the opencode CLI installed and authenticated.
-
+将编码任务委派给 OpenCode CLI 智能体，用于功能开发、重构、PR 审查和长时间自主会话。
 [查看详情](./autonomous-ai-agents/opencode)
 
 ---
 
 ## 🎨 Comfyui
 
+使用 ComfyUI 生成图像、视频和音频 — 安装、启动、节点/模型管理、工作流运行。
+
 ### comfyui
-
-Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.
-
-[查看详情](./comfyui)
+图像、视频和音频生成 — 安装、启动、管理节点/模型，参数注入运行工作流。
+[查看详情](./comfyui/comfyui)
 
 ---
 
 ## 🎨 Creative
 
----
-description: Creative content generation — ASCII art, hand-drawn style diagrams, and visual design tools.
----
+创意内容生成、设计和视觉传达。
 
 ### architecture-diagram
-
-Generate dark-themed SVG diagrams of software systems and cloud infrastructure as standalone HTML files with inline SVG graphics. Semantic component colors (cyan=frontend, emerald=backend, violet=database, amber=cloud/AWS, rose=security, orange=message bus), JetBrains Mono font, grid background. Best suited for software architecture, cloud/VPC topology, microservice maps, service-mesh diagrams, database + API layer diagrams, security groups, message buses — anything that fits a tech-infra deck with a dark aesthetic. If a more specialized diagramming skill exists for the subject (scientific, educational, hand-drawn, animated, etc.), prefer that — otherwise this skill can also serve as a general-purpose SVG diagram fallback. Based on Cocoon AI's architecture-diagram-generator (MIT).
-
+生成深色主题的软件架构和云基础设施 SVG 示意图，输出为响应式 HTML。
 [查看详情](./creative/architecture-diagram)
 
 ### ascii-art
-
-Generate ASCII art using pyfiglet (571 fonts), cowsay, boxes, toilet, image-to-ascii, remote APIs (asciified, ascii.co.uk), and LLM fallback. No API keys required.
-
+使用 pyfiglet、cowsay、boxes 等工具生成 ASCII 艺术字和图。
 [查看详情](./creative/ascii-art)
 
 ### ascii-video
-
-Production pipeline for ASCII art video — any format. Converts video/audio/images/generative input into colored ASCII character video output (MP4, GIF, image sequence). Covers: video-to-ASCII conversion, audio-reactive music visualizers, generative ASCII art animations, hybrid video+audio reactive, text/lyrics overlays, real-time terminal rendering. Use when users request: ASCII video, text art video, terminal-style video, character art animation, retro text visualization, audio visualizer in ASCII, converting video to ASCII art, matrix-style effects, or any animated ASCII output.
-
+ASCII 艺术视频生产管线，将视频/音频转为彩色 ASCII MP4 或 GIF。
 [查看详情](./creative/ascii-video)
 
 ### baoyu-comic
-
-Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed panel layouts and sequential image generation. Use when user asks to create "知识漫画", "教育漫画", "biography comic", "tutorial comic", or "Logicomix-style comic".
-
+知识漫画创作工具，支持多种画风，可生成教育、传记、教程类漫画。
 [查看详情](./creative/baoyu-comic)
 
 ### baoyu-infographic
-
-Generate professional infographics with 21 layout types and 21 visual styles. Analyzes content, recommends layout×style combinations, and generates publication-ready infographics. Use when user asks to create "infographic", "visual summary", "信息图", "可视化", or "高密度信息大图".
-
+21 种布局 x 21 种视觉风格的专业信息图生成工具。
 [查看详情](./creative/baoyu-infographic)
 
 ### excalidraw
-
-Create hand-drawn style diagrams using Excalidraw JSON format. Generate .excalidraw files for architecture diagrams, flowcharts, sequence diagrams, concept maps, and more. Files can be opened at excalidraw.com or uploaded for shareable links.
-
+手绘风格图表生成，支持架构图、流程图、时序图、实体关系图。
 [查看详情](./creative/excalidraw)
 
 ### ideation
-
-Generate project ideas through creative constraints. Use when the user says 'I want to build something', 'give me a project idea', 'I'm bored', 'what should I make', 'inspire me', or any variant of 'I have tools but no direction'. Works for code, art, hardware, writing, tools, and anything that can be made.
-
-[查看详情](./creative/creative-ideation)
+通过创意约束生成项目想法，适合「想做点什么但不知道做什么」的场景。
+[查看详情](./creative/ideation)
 
 ### manim-video
-
-Production pipeline for mathematical and technical animations using Manim Community Edition. Creates 3Blue1Brown-style explainer videos, algorithm visualizations, equation derivations, architecture diagrams, and data stories. Use when users request: animated explanations, math animations, concept visualizations, algorithm walkthroughs, technical explainers, 3Blue1Brown style videos, or any programmatic animation with geometric/mathematical content.
-
+使用 Manim CE 制作数学和技术动画，3Blue1Brown 风格的讲解视频。
 [查看详情](./creative/manim-video)
 
 ### p5js
-
-Production pipeline for interactive and generative visual art using p5.js. Creates browser-based sketches, generative art, data visualizations, interactive experiences, 3D scenes, audio-reactive visuals, and motion graphics — exported as HTML, PNG, GIF, MP4, or SVG. Covers: 2D/3D rendering, noise and particle systems, flow fields, shaders (GLSL), pixel manipulation, kinetic typography, WebGL scenes, audio analysis, mouse/keyboard interaction, and headless high-res export. Use when users request: p5.js sketches, creative coding, generative art, interactive visualizations, canvas animations, browser-based visual art, data viz, shader effects, or any p5.js project.
-
+交互式和生成式视觉艺术 — 草图、生成艺术、着色器、3D 交互、数据可视化。
 [查看详情](./creative/p5js)
 
 ### pixel-art
-
-Convert images into retro pixel art with hardware-accurate palettes (NES, Game Boy, PICO-8, C64, etc.), and animate them into short videos. Presets cover arcade, SNES, and 10+ era-correct looks. Use `clarify` to let the user pick a style before generating.
-
+将图片转为复古像素艺术，使用 NES、Game Boy、PICO-8 等硬件调色板。
 [查看详情](./creative/pixel-art)
 
 ### popular-web-designs
-
->
-
+54 个真实设计系统（Stripe、Linear、Vercel 等）的 HTML/CSS 实现。
 [查看详情](./creative/popular-web-designs)
 
 ### songwriting-and-ai-music
-
->
-
+歌词创作技巧和 Suno AI 音乐生成提示词。
 [查看详情](./creative/songwriting-and-ai-music)
 
 ---
 
 ## 📊 Data Science
 
----
-description: Skills for data science workflows — interactive exploration, Jupyter notebooks, data analysis, and visualization.
----
+数据科学工作流 — 交互式探索、Jupyter 笔记本、数据分析和可视化。
 
 ### jupyter-live-kernel
-
->
-
+通过 live Jupyter kernel 迭代式 Python 编程。
 [查看详情](./data-science/jupyter-live-kernel)
 
 ---
 
-## 🔧 Devops
+## 🔧 DevOps
+
+复杂运维任务的标准化操作指南。
+
+### kanban-orchestrator
+任务分解 + 专家编排的分解式 Kanban 工作流管理。
+[查看详情](./devops/kanban-orchestrator)
+
+### kanban-worker
+Hermes Kanban Worker 的常见陷阱、示例和边界情况。
+[查看详情](./devops/kanban-worker)
 
 ### webhook-subscriptions
-
-Create and manage webhook subscriptions for event-driven agent activation, or for direct push notifications (zero LLM cost). Use when the user wants external services to trigger agent runs OR push notifications to chats.
-
+创建和管理 webhook 订阅，用于事件驱动的智能体触发或定时 cron 触发。
 [查看详情](./devops/webhook-subscriptions)
 
 ---
 
 ## 🐛 Dogfood
 
+Web 应用探索式 QA 测试。
+
 ### dogfood
-
-Systematic exploratory QA testing of web applications — find bugs, capture evidence, and generate structured reports
-
-[查看详情](./dogfood)
+系统性 QA 测试 — 发现 bug、捕获证据、生成结构化 bug 报告。
+[查看详情](./dogfood/dogfood)
 
 ---
 
 ## 📧 Email
 
----
-description: Skills for sending, receiving, searching, and managing email from the terminal.
----
+通过 IMAP/SMTP CLI 管理电子邮件。
 
 ### himalaya
-
-CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).
-
+终端邮件管理 — 列出、阅读、编写、回复、转发、移动和删除邮件。
 [查看详情](./email/himalaya)
 
 ---
 
 ## 🎮 Gaming
 
----
-description: Skills for setting up, configuring, and managing game servers, modpacks, and gaming-related infrastructure.
----
+游戏服务器搭建和管理。
 
 ### minecraft-modpack-server
-
-Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Covers NeoForge/Forge install, Java version, JVM tuning, firewall, LAN config, backups, and launch scripts.
-
+从 CurseForge/Modrinth 模组包搭建 Minecraft 服务器。
 [查看详情](./gaming/minecraft-modpack-server)
 
 ### pokemon-player
-
-Play Pokemon games autonomously via headless emulation. Starts a game server, reads structured game state from RAM, makes strategic decisions, and sends button inputs — all from the terminal.
-
+通过无头模拟器自主玩宝可梦游戏。
 [查看详情](./gaming/pokemon-player)
 
 ---
 
-## 🐙 Github
+## 🐙 GitHub
 
----
-description: GitHub workflow skills for managing repositories, pull requests, code reviews, issues, and CI/CD pipelines using the gh CLI and git via terminal.
----
+GitHub 工作流 — 仓库管理、PR、审查、Issue、CI/CD。
 
 ### codebase-inspection
-
-Inspect and analyze codebases using pygount for LOC counting, language breakdown, and code-vs-comment ratios. Use when asked to check lines of code, repo size, language composition, or codebase stats.
-
+使用 pygount 检查代码库，统计代码行数和语言构成。
 [查看详情](./github/codebase-inspection)
 
 ### github-auth
-
-Set up GitHub authentication for the agent using git (universally available) or the gh CLI. Covers HTTPS tokens, SSH keys, credential helpers, and gh auth — with a detection flow to pick the right method automatically.
-
+使用 git 或 GitHub CLI 配置 GitHub 认证。
 [查看详情](./github/github-auth)
 
 ### github-code-review
-
-Review code changes by analyzing git diffs, leaving inline comments on PRs, and performing thorough pre-push review. Works with gh CLI or falls back to git + GitHub REST API via curl.
-
+分析 git diff 审查代码变更，在 PR 上留下行内评论。
 [查看详情](./github/github-code-review)
 
 ### github-issues
-
-Create, manage, triage, and close GitHub issues. Search existing issues, add labels, assign people, and link to PRs. Works with gh CLI or falls back to git + GitHub REST API via curl.
-
+创建、管理、分类和关闭 GitHub Issues。
 [查看详情](./github/github-issues)
 
 ### github-pr-workflow
-
-Full pull request lifecycle — create branches, commit changes, open PRs, monitor CI status, auto-fix failures, and merge. Works with gh CLI or falls back to git + GitHub REST API via curl.
-
+完整的 PR 生命周期管理 — 创建分支、提交、开 PR、合并。
 [查看详情](./github/github-pr-workflow)
 
 ### github-publish-skills
-
-将 Hermes Agent skills 发布到 GitHub 仓库的完整流程。包含认证、仓库创建、文件推送。
-
+将 Hermes Agent skills 发布到 GitHub 仓库的完整流程。
 [查看详情](./github/github-publish-skills)
 
 ### github-repo-management
-
-Clone, create, fork, configure, and manage GitHub repositories. Manage remotes, secrets, releases, and workflows. Works with gh CLI or falls back to git + GitHub REST API via curl.
-
+克隆、创建、fork、配置和管理 GitHub 仓库。
 [查看详情](./github/github-repo-management)
 
 ---
 
 ## 📍 Leisure
 
+休闲和生活技能。
+
 ### find-nearby
-
-Find nearby places (restaurants, cafes, bars, pharmacies, etc.) using OpenStreetMap. Works with coordinates, addresses, cities, zip codes, or Telegram location pins. No API keys needed.
-
+使用 OpenStreetMap 查找附近地点（餐厅、咖啡馆、药店等）。
 [查看详情](./leisure/find-nearby)
 
 ---
 
-## 🔌 Mcp
+## 🔌 MCP
 
----
-description: Skills for working with MCP (Model Context Protocol) servers, tools, and integrations. Includes the built-in native MCP client (configure servers in config.yaml for automatic tool discovery) and the mcporter CLI bridge for ad-hoc server interaction.
----
+MCP 服务器和客户端技能，用于连接外部工具和服务。
 
 ### mcporter
-
-Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
-
+使用 mcporter CLI 列出、配置、认证和调用 MCP 服务器/工具。
 [查看详情](./mcp/mcporter)
 
 ### native-mcp
-
-Built-in MCP (Model Context Protocol) client that connects to external MCP servers, discovers their tools, and registers them as native Hermes Agent tools. Supports stdio and HTTP transports with automatic reconnection, security filtering, and zero-config tool injection.
-
+内置 MCP 客户端，连接外部 MCP 服务器，发现并注册工具。
 [查看详情](./mcp/native-mcp)
 
 ---
 
 ## 🎵 Media
 
----
-description: Skills for working with media content — YouTube transcripts, GIF search, music generation, and audio visualization.
----
+媒体处理、GIF 搜索、音乐生成和音频分析。
 
 ### gif-search
-
-Search and download GIFs from Tenor using curl. No dependencies beyond curl and jq. Useful for finding reaction GIFs, creating visual content, and sending GIFs in chat.
-
+从 Tenor 搜索和下载 GIF。
 [查看详情](./media/gif-search)
 
 ### heartmula
-
-Set up and run HeartMuLa, the open-source music generation model family (Suno-like). Generates full songs from lyrics + tags with multilingual support.
-
+搭建和运行 HeartMuLa 开源音乐生成模型。
 [查看详情](./media/heartmula)
 
 ### songsee
-
-Generate spectrograms and audio feature visualizations (mel, chroma, MFCC, tempogram, etc.) from audio files via CLI. Useful for audio analysis, music production debugging, and visual documentation.
-
+从音频文件生成频谱图和音频特征可视化。
 [查看详情](./media/songsee)
 
 ### youtube-content
-
->
-
+YouTube 视频转录和内容分析。
 [查看详情](./media/youtube-content)
 
 ---
 
-## 🧠 Mlops
+## 🧠 MLOps
 
----
-description: Vector similarity search and embedding databases for RAG, semantic search, and AI application backends.
----
+机器学习运维 — 模型训练、推理、微调、评估和部署。
 
 ### audiocraft-audio-generation
-
-PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music from text descriptions, create sound effects, or perform melody-conditioned music generation.
-
-[查看详情](./mlops/models/audiocraft)
+PyTorch 音频生成库，支持文字转音乐和文字转音效。
+[查看详情](./mlops/audiocraft-audio-generation)
 
 ### axolotl
-
-Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support
-
-[查看详情](./mlops/training/axolotl)
+使用 Axolotl 微调 LLM — YAML 配置、100+ 模型、LoRA/QLoRA。
+[查看详情](./mlops/axolotl)
 
 ### clip
-
-OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.
-
-[查看详情](./mlops/models/clip)
+OpenAI 视觉-语言模型，零样本图像分类和相似度搜索。
+[查看详情](./mlops/clip)
 
 ### dspy
-
-Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM programming
-
-[查看详情](./mlops/research/dspy)
+声明式编程构建复杂 AI 系统，自动优化提示词。
+[查看详情](./mlops/dspy)
 
 ### evaluating-llms-harness
-
-Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs.
-
-[查看详情](./mlops/evaluation/lm-evaluation-harness)
+60+ 学术基准评估 LLM（MMLU、HumanEval、GSM8K 等）。
+[查看详情](./mlops/evaluating-llms-harness)
 
 ### fine-tuning-with-trl
-
-Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward optimization, and reward model training. Use when need RLHF, align model with preferences, or train from human feedback. Works with HuggingFace Transformers.
-
-[查看详情](./mlops/training/trl-fine-tuning)
+使用 TRL 进行 RL 微调 — SFT、DPO、PPO/GRPO。
+[查看详情](./mlops/fine-tuning-with-trl)
 
 ### gguf-quantization
-
-GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or when needing flexible quantization from 2-8 bit without GPU requirements.
-
-[查看详情](./mlops/inference/gguf)
+GGUF 格式和 llama.cpp 量化，消费级硬件高效推理。
+[查看详情](./mlops/gguf-quantization)
 
 ### grpo-rl-training
-
-Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training
-
-[查看详情](./mlops/training/grpo-rl-training)
+GRPO/RL 微调专家指南，用于推理和特定任务优化。
+[查看详情](./mlops/grpo-rl-training)
 
 ### guidance
-
-Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework
-
-[查看详情](./mlops/inference/guidance)
+使用正则和语法控制 LLM 输出，保证有效结构生成。
+[查看详情](./mlops/guidance)
 
 ### huggingface-hub
-
-Hugging Face Hub CLI (hf) — search, download, and upload models and datasets, manage repos, query datasets with SQL, deploy inference endpoints, manage Spaces and buckets.
-
+Hugging Face Hub CLI — 搜索、下载、上传模型和数据集。
 [查看详情](./mlops/huggingface-hub)
 
 ### llama-cpp
-
-llama.cpp local GGUF inference + HF Hub model discovery.
-
-[查看详情](./mlops/inference/llama-cpp)
+llama.cpp 本地 GGUF 推理 + HuggingFace Hub 模型发现。
+[查看详情](./mlops/llama-cpp)
 
 ### modal-serverless-gpu
-
-Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.
-
-[查看详情](./mlops/cloud/modal)
+无服务器 GPU 云平台，按需运行 ML 工作负载。
+[查看详情](./mlops/modal-serverless-gpu)
 
 ### obliteratus
-
-Remove refusal behaviors from open-weight LLMs using OBLITERATUS — mechanistic interpretability techniques (diff-in-means, SVD, whitened SVD, LEACE, SAE decomposition, etc.) to excise guardrails while preserving reasoning. 9 CLI methods, 28 analysis modules, 116 model presets across 5 compute tiers, tournament evaluation, and telemetry-driven recommendations. Use when a user wants to uncensor, abliterate, or remove refusal from an LLM.
-
-[查看详情](./mlops/inference/obliteratus)
+消除开源 LLM 拒绝行为 — 机械可解释性消融技术。
+[查看详情](./mlops/obliteratus)
 
 ### outlines
-
-Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers, vLLM), and maximize inference speed with Outlines - dottxt.ai's structured generation library
-
-[查看详情](./mlops/inference/outlines)
+使用 Pydantic 模型保证类型安全的结构化 LLM 输出。
+[查看详情](./mlops/outlines)
 
 ### peft-fine-tuning
-
-Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.
-
-[查看详情](./mlops/training/peft)
+LoRA、QLoRA 等参数高效微调，适合 GPU 有限场景。
+[查看详情](./mlops/peft-fine-tuning)
 
 ### pytorch-fsdp
-
-Expert guidance for Fully Sharded Data Parallel training with PyTorch FSDP - parameter sharding, mixed precision, CPU offloading, FSDP2
-
-[查看详情](./mlops/training/pytorch-fsdp)
+PyTorch FSDP 分布式训练 — 并行策略、内存优化。
+[查看详情](./mlops/pytorch-fsdp)
 
 ### segment-anything-model
-
-Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, or masks as prompts, or automatically generate all object masks in an image.
-
-[查看详情](./mlops/models/segment-anything)
+零样本图像分割，无需微调即可分割任意物体。
+[查看详情](./mlops/segment-anything-model)
 
 ### serving-llms-vllm
-
-Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing inference latency/throughput, or serving models with limited GPU memory. Supports OpenAI-compatible endpoints, quantization (GPTQ/AWQ/FP8), and tensor parallelism.
-
-[查看详情](./mlops/inference/vllm)
+vLLM 高吞吐量 LLM 服务，兼容 OpenAI API。
+[查看详情](./mlops/serving-llms-vllm)
 
 ### stable-diffusion-image-generation
-
-State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text prompts, performing image-to-image translation, inpainting, or building custom diffusion pipelines.
-
-[查看详情](./mlops/models/stable-diffusion)
+Stable Diffusion 文字转图像，支持 txt2img、img2img、ControlNet。
+[查看详情](./mlops/stable-diffusion-image-generation)
 
 ### unsloth
-
-Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization
-
-[查看详情](./mlops/training/unsloth)
+Unsloth 快速微调 — 2-5 倍速度、50-80% 内存节省。
+[查看详情](./mlops/unsloth)
 
 ### weights-and-biases
-
-Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform
-
-[查看详情](./mlops/evaluation/weights-and-biases)
+W&B 实验追踪、超参数优化、模型版本管理。
+[查看详情](./mlops/weights-and-biases)
 
 ### whisper
-
-OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR.
-
-[查看详情](./mlops/models/whisper)
+OpenAI 通用语音识别模型，支持 99 种语言。
+[查看详情](./mlops/whisper)
 
 ---
 
 ## 📝 Note Taking
 
----
-description: Note taking skills, to save information, assist with research, and collab on multi-session planning and information sharing.
----
+笔记和知识管理。
 
 ### obsidian
-
-Read, search, and create notes in the Obsidian vault.
-
+在 Obsidian 笔记库中读取、搜索和创建笔记。
 [查看详情](./note-taking/obsidian)
 
 ---
 
-## 📦 Openclaw Deploy
+## 📦 OpenClaw Deploy
 
-### openclaw-deploy
-
-OpenClaw 从零开始在 Linux 服务器上部署的完整指南 — 环境准备、安装、配置模型/飞书、systemd 服务、验证
-
+OpenClaw 从零开始部署的完整指南 — 环境准备、安装、配置模型/飞书、systemd 服务、验证。
 [查看详情](./openclaw-deploy)
 
----
+## 🔧 OpenClaw Upgrade & 502 Fix
 
-## 🔧 Openclaw Upgrade 502 Fix
-
-### openclaw-upgrade-502-fix
-
-OpenClaw 升级运维完整指南 — 502 错误排查、标准升级 SOP、应急回滚、日常运维
-
+OpenClaw 升级运维完整指南 — 502 错误排查、标准升级 SOP、应急回滚、日常运维。
 [查看详情](./openclaw-upgrade-502-fix)
 
 ---
 
 ## 💼 Productivity
 
----
-description: Skills for extracting text from PDFs, scanned documents, images, and other file formats using OCR and document parsing tools.
----
+生产力工具 — 文档、演示文稿、CRM、项目管理。
+
+### airtable
+使用 curl 通过 Airtable REST API 管理数据。
+[查看详情](./productivity/airtable)
 
 ### google-workspace
-
-Gmail, Calendar, Drive, Contacts, Sheets, and Docs integration for Hermes. Uses Hermes-managed OAuth2 setup, prefers the Google Workspace CLI (`gws`) when available for broader API coverage, and falls back to the Python client libraries otherwise.
-
+Gmail、日历、云端硬盘等 Google 服务的 Hermes 集成。
 [查看详情](./productivity/google-workspace)
 
 ### linear
-
-Manage Linear issues, projects, and teams via the GraphQL API. Create, update, search, and organize issues. Uses API key auth (no OAuth needed). All operations via curl — no dependencies.
-
+通过 GraphQL API 管理 Linear 问题、项目和团队。
 [查看详情](./productivity/linear)
 
 ### maps
-
->
-
+使用 OpenStreetMap/OSRM 进行地理编码、POI 查询和路线规划。
 [查看详情](./productivity/maps)
 
 ### nano-pdf
-
-Edit PDFs with natural-language instructions using the nano-pdf CLI. Modify text, fix typos, update titles, and make content changes to specific pages without manual editing.
-
+通过自然语言指令编辑 PDF。
 [查看详情](./productivity/nano-pdf)
 
 ### notion
-
-Notion API for creating and managing pages, databases, and blocks via curl. Search, create, update, and query Notion workspaces directly from the terminal.
-
+使用 Notion API 创建和管理页面、数据库。
 [查看详情](./productivity/notion)
 
 ### ocr-and-documents
-
-Extract text from PDFs and scanned documents. Use web_extract for remote URLs, pymupdf for local text-based PDFs, marker-pdf for OCR/scanned docs. For DOCX use python-docx, for PPTX see the powerpoint skill.
-
+从 PDF 和扫描文档中提取文字。
 [查看详情](./productivity/ocr-and-documents)
 
 ### opc-battle-system
-
-OPC (One-Person Company) 超级作战系统 — 飞书 CLI + Hermes Agent 自动化工作流。构建 24 小时不断电的个人组织系统：早简报、线索归档、会议转任务、每日复盘。
-
+OPC 超级作战系统 — 飞书 CLI + Hermes Agent 自动化工作流。
 [查看详情](./productivity/opc-battle-system)
 
 ### powerpoint
-
-Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.
-
+PowerPoint 文件处理 — 创建、读取、编辑幻灯片。
 [查看详情](./productivity/powerpoint)
 
 ### side-hustle-exploration
-
-Help users overcome analysis paralysis and move from "too many ideas" to "taking action" when exploring side hustles or career second curves
-
+副业探索指南 — 帮助克服分析瘫痪，从想法到行动。
 [查看详情](./productivity/side-hustle-exploration)
 
 ---
 
 ## 🔴 Red Teaming
 
+LLM 安全测试和红队攻防。
+
 ### godmode
-
-Jailbreak API-served LLMs using G0DM0D3 techniques — Parseltongue input obfuscation (33 techniques), GODMODE CLASSIC system prompt templates, ULTRAPLINIAN multi-model racing, encoding escalation, and Hermes-native prefill/system prompt integration. Use when a user wants to bypass safety filters, jailbreak a model, or red-team model robustness.
-
+使用 G0DM0D3 技术对 LLM 进行越狱测试 — 输入混淆、系统提示模板。
 [查看详情](./red-teaming/godmode)
 
 ---
 
 ## 🔬 Research
 
----
-description: Skills for academic research, paper discovery, literature review, domain reconnaissance, market data, content monitoring, and scientific knowledge retrieval.
----
+学术研究、论文发现和科学知识检索。
 
 ### arxiv
-
-Search and retrieve academic papers from arXiv using their free REST API. No API key needed. Search by keyword, author, category, or ID. Combine with web_extract or the ocr-and-documents skill to read full paper content.
-
+使用 arXiv REST API 搜索和获取学术论文。
 [查看详情](./research/arxiv)
 
 ### blogwatcher
-
-Monitor blogs and RSS/Atom feeds for updates using the blogwatcher-cli tool. Add blogs, scan for new articles, track read status, and filter by category.
-
+监控博客和 RSS/Atom 订阅更新。
 [查看详情](./research/blogwatcher)
 
 ### llm-wiki
-
-Karpathy's LLM Wiki — build and maintain a persistent, interlinked markdown knowledge base. Ingest sources, query compiled knowledge, and lint for consistency.
-
+从 LLM 对话中构建和维护 Markdown 知识库。
 [查看详情](./research/llm-wiki)
 
 ### polymarket
-
-Query Polymarket prediction market data — search markets, get prices, orderbooks, and price history. Read-only via public REST APIs, no API key needed.
-
+查询 Polymarket 预测市场数据。
 [查看详情](./research/polymarket)
 
 ### research-paper-writing
-
-End-to-end pipeline for writing ML/AI research papers — from experiment design through analysis, drafting, revision, and submission. Covers NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Integrates automated experiment monitoring, statistical analysis, iterative writing, and citation verification.
-
+ML/AI 学术论文全流程写作管线。
 [查看详情](./research/research-paper-writing)
 
 ---
 
 ## 🏠 Smart Home
 
----
-description: Skills for controlling smart home devices — lights, switches, sensors, and home automation systems.
----
+智能家居设备控制和自动化。
 
 ### openhue
-
-Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights on/off, adjust brightness, color, color temperature, and activate scenes.
-
+通过 OpenHue CLI 控制 Philips Hue 灯光、房间和场景。
 [查看详情](./smart-home/openhue)
 
 ---
 
 ## 📱 Social Media
 
----
-description: Skills for interacting with social platforms and social-media workflows — posting, reading, monitoring, and account operations.
----
+社交媒体平台互动和内容管理。
 
 ### xitter
-
-Interact with X/Twitter via the x-cli terminal client using official X API credentials. Use for posting, reading timelines, searching tweets, liking, retweeting, bookmarks, mentions, and user lookups.
-
+通过 x-cli 与 X/Twitter 互动 — 发帖、读时间线、搜索、点赞。
 [查看详情](./social-media/xitter)
 
 ### xurl
-
-Interact with X/Twitter via xurl, the official X API CLI. Use for posting, replying, quoting, searching, timelines, mentions, likes, reposts, bookmarks, follows, DMs, media upload, and raw v2 endpoint access.
-
+通过 xurl CLI 与 X/Twitter 互动 — 发帖、回复、私信、上传媒体。
 [查看详情](./social-media/xurl)
 
 ---
 
 ## 💻 Software Development
 
+软件开发工作流、调试和代码质量工具。
+
+### debugging-hermes-tui-commands
+Hermes TUI 斜杠命令调试 — Python、Gateway、Ink UI。
+[查看详情](./software-development/debugging-hermes-tui-commands)
+
+### hermes-agent-skill-authoring
+在仓库中编写 SKILL.md — 前置元数据、验证器、结构规范。
+[查看详情](./software-development/hermes-agent-skill-authoring)
+
+### node-inspect-debugger
+通过 --inspect + Chrome DevTools 协议调试 Node.js。
+[查看详情](./software-development/node-inspect-debugger)
+
 ### plan
-
-Plan mode for Hermes — inspect context, write a markdown plan into the active workspace's `.hermes/plans/` directory, and do not execute the work.
-
+Hermes 计划模式 — 编写 Markdown 计划，不执行实际操作。
 [查看详情](./software-development/plan)
 
+### python-debugpy
+通过 pdb REPL + debugpy 远程调试 Python。
+[查看详情](./software-development/python-debugpy)
+
 ### requesting-code-review
-
->
-
+提交前代码审查 — 安全扫描、质量门禁、自动修复。
 [查看详情](./software-development/requesting-code-review)
 
+### spike
+快速实验验证想法，验证可行后再正式构建。
+[查看详情](./software-development/spike)
+
 ### subagent-driven-development
-
-Use when executing implementation plans with independent tasks. Dispatches fresh delegate_task per task with two-stage review (spec compliance then code quality).
-
+并行执行独立任务的子智能体开发模式。
 [查看详情](./software-development/subagent-driven-development)
 
 ### systematic-debugging
-
-Use when encountering any bug, test failure, or unexpected behavior. 4-phase root cause investigation — NO fixes without understanding the problem first.
-
+四阶段根因调试 — 先理解再修复。
 [查看详情](./software-development/systematic-debugging)
 
 ### test-driven-development
-
-Use when implementing any feature or bugfix, before writing implementation code. Enforces RED-GREEN-REFACTOR cycle with test-first approach.
-
+RED-GREEN-REFACTOR 循环，先写测试再写代码。
 [查看详情](./software-development/test-driven-development)
 
 ### writing-plans
-
-Use when you have a spec or requirements for a multi-step task. Creates comprehensive implementation plans with bite-sized tasks, exact file paths, and complete code examples.
-
+为多步任务编写实施计划，包含细分任务和架构决策。
 [查看详情](./software-development/writing-plans)
 
 ---
@@ -735,6 +565,7 @@ git clone https://github.com/wszz117/hem-skills.git
 
 # 复制需要的 skill 到 hem skills 目录
 cp -r hem-skills/<category>/<skill-name> ~/.hermes/skills/<category>/
-```
 
-或者直接在 Hermes Agent 中配置该仓库作为 skill 源。
+# 或者直接用 Hermes Agent 配置仓库源
+hermes skills tap add https://github.com/wszz117/hem-skills
+```
